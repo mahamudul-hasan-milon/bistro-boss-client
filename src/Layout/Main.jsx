@@ -5,9 +5,12 @@ import NavBar from "../pages/Shared/NavBar/NavBar";
 const Main = () => {
   return (
     <div>
-      <NavBar></NavBar>
-      <Outlet></Outlet>
-      <Footer></Footer>
+      <NavBar />
+      <main className="pt-12 min-h-screen">
+        <Outlet />
+      </main>
+
+      <Footer />
     </div>
   );
 };
